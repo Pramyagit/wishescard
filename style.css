@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,500;1,900&display=swap');
+
+body,#back{
+    background-image: url("images/lantern-2146997_1280.jpg");
+    background-position: right bottom, left top;
+  background-repeat: no-repeat repeat;
+}
+#back1{
+    background-color: rgb(244, 234, 193);
+}
+
+
+.theader{
+    animation:all 2s infinite;
+}
+
+
+.text-all{
+    animation: all 1s infinite;
+    background-color: rgb(54, 54, 54);
+    width:30%;
+    text-align: center;
+    color:#fff;
+}
+
+.targ li a{
+    font-size: 25px;
+    background-color:transparent
+}
+.targ li a:hover{
+    background-color:  rgb(244, 234, 193);  
+}
+.targ li a:focus{
+    background-color:  rgb(244, 234, 193);  
+}
+
+@keyframes all {
+    0% {
+      color:#fff;
+       
+    }
+    25%{
+        color:pink;
+
+    }
+    50%{
+        color:red;
+    }
+    100%{
+        color:chartreuse
+    }
+    
+}

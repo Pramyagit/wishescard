@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival wishes</title>
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+   .bg-body, body{
+        background-image: url("images/action-gfff71ebca_1280.jpg");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  /* padding: 15px; */
+  margin:0;
+    }
+    img{
+        object-fit: cover;
+        object-position: center;
+    
+    }
+.fab:hover{
+    opacity:1;
+    background-color:white;
+}
+.fa-facebook,.fa-whatsapp,.fa-instagram,.fa-twitter{
+    border-radius: 10%;
+}
+#xmas:hover,#new:hover,#pongal:hover,#pooja:hover,#diwali:hover{
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+  animation:slidebg 3s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+    <h1 class="text-center bg-body text-capitalize text-warning">festivel wishes</h1>
+    <div class="nav nav-tabs border-top  border-bottom">
+    <div class="container-fluid d-lg-flex d-sm-inline text-center m-1">
+        <div class="col-3 border-end">
+<div class="btn-group ">
+    <button class="btn btn-primary" id="xmas">X'MAS</button>
+    <button class="btn btn-primary" id="new">NEWYEAR</button>
+</div>
+        </div>
+        <div class="col-3 border-end">
+            <button class="btn btn-warning" id="pongal">PONGAL</button>
+        </div>
+        <div class="col-3 border-end">
+            <button class="btn btn-danger" id="pooja">POOJA</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-success" id="diwali">DIWALI</button>
+        </div>
+    </div>
+</div>
+
+<div class="row container-fluid">
+    <div class="container col-6">
+    <form class="form-control mt-3 p-4 text-center border-danger ">
+        <label class="mb-3 fs-4">Enter Name</label><input class="w-50" id="Ename"type="text">
+        <br>
+        <label class="mb-3 fs-4">Wishes Type</label><select class="w-50 wishes">
+            <option class="fs-5">X'mas</option>
+            <option class="fs-5">Newyear</option>
+            <option class="fs-5">Pongal</option>
+            <option class="fs-5">Pooja</option>
+            <option class="fs-5">Diwali</option>
+        </select>
+        <br>
+        <label class="mb-3 fs-4">Message....</label> <textarea class="w-50 ms-2 msg"></textarea>
+        <div class="container">
+            <div class="image-container">
+                <img id="preview"   alt="Image preview..."src="images/christmas-ga83ac958a_1280.jpg"class="img-thumbnail cont-img"></div>
+            <input type="file"id="upload"onchange="previewFile()" class="mb-3 btn-sm btn-danger select-img">
+        </div>
+        <button type="button" class="btn btn-lg w-50 btn-outline-danger"onclick="clicked()" class="submit">submit</button>
+    </form>
+    </div>
+<div class="container col-6 mt-3 ">
+
+    <div class="card">
+        <img src="images/for-you-g83e1461db_1280.png" height="400" class="img-responsive">
+        <div class="card-body">
+            <p id="demo" class="text-center">Hai,Happy festival day</p>
+        </div>
+    </div>
+
+       
+
+         <div class="share-button sharer text-center" style="display: block;">
+            <button type="button" class="btn btn-success share-btn mt-3" data-bs-toggle="collapse" href="#collapseExample">Share</button>
+        </div>
+            <div class="collapse text-center" id="collapseExample">
+            <div class="social top center networks-5 mt-3 ">
+          <a class="me-3"  href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"><i class="fab fa-facebook fa-2x" style="color:  #3b5998"></i></a>
+          <a class="me-3" href="https://wa.me/whatsappphonenumber/?text=urlencodedtext"><i class="fab fa-whatsapp fa-2x" style="color: #25d366;"></i></a>
+          <a class="me-3" href="http://instagram.com"><i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i></a>
+          <a class="me-3" href="http://Twitter.com"><i class="fab fa-twitter fa-2x" style="color: #55acee;"></i></a>
+            </div>
+            </div>
+       
+    </div>
+</div>
+
+
+
+
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
