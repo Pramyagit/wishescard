@@ -13,7 +13,8 @@
    .bg-body, body{
         background-image: url("images/action-gfff71ebca_1280.jpg");
   background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
+  background-repeat:repeat;
+ 
   /* padding: 15px; */
   margin:0;
     }
@@ -46,27 +47,27 @@
 <body>
     <h1 class="text-center bg-body text-capitalize text-warning">festivel wishes</h1>
     <div class="nav nav-tabs border-top  border-bottom">
-    <div class="container-fluid d-lg-flex d-sm-inline text-center m-1">
-        <div class="col-3 border-end">
+    <div class="container-fluid d-lg-flex d-md-flex d-sm-flex text-center m-1">
+        <div class="col-12 col-md-3 col-lg-3 mt-3 border-end">
 <div class="btn-group ">
     <button class="btn btn-primary" id="xmas">X'MAS</button>
     <button class="btn btn-primary" id="new">NEWYEAR</button>
 </div>
         </div>
-        <div class="col-3 border-end">
+        <div class="col-12 col-md-3 col-lg-3 mt-3 border-end">
             <button class="btn btn-warning" id="pongal">PONGAL</button>
         </div>
-        <div class="col-3 border-end">
+        <div class="col-12 col-md-3 col-lg-3 mt-3 border-end">
             <button class="btn btn-danger" id="pooja">POOJA</button>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-3 col-lg-3 mt-3">
             <button class="btn btn-success" id="diwali">DIWALI</button>
         </div>
     </div>
 </div>
 
 <div class="row container-fluid">
-    <div class="container col-6">
+    <div class="container  col-12 col-md-6 col-lg-6 mt-3">
     <form class="form-control mt-3 p-4 text-center border-danger ">
         <label class="mb-3 fs-4">Enter Name</label><input class="w-50" id="Ename"type="text">
         <br>
@@ -82,17 +83,17 @@
         <div class="container overflow-hidden">
             <div class="image-container">
                 <img id="preview"   alt="Image preview..."src="images/christmas-ga83ac958a_1280.jpg"class="img-thumbnail cont-img"></div>
-            <input type="file"id="upload"onchange="previewFile()" class="mb-3 btn-sm btn-danger select-img">
+            <input type="file"id="upload"onchange="previewFile()" class="mb-3 btn-sm  overflow-hidden select-img">
         </div>
         <button type="button" class="btn btn-lg w-50 btn-outline-danger"onclick="clicked()" class="submit">submit</button>
     </form>
     </div>
-<div class="container col-6 mt-3 ">
+<div class="container col-12 col-md-6 col-lg-6 mt-3 mt-3 ">
 
     <div class="card">
         <img src="images/for-you-g83e1461db_1280.png" height="400" class="img-responsive">
         <div class="card-body">
-            <p id="demo" class="text-center">Hai,Happy festival day</p>
+            <p id="demo" class="text-center">Hai,Happy Festival Day</p>
         </div>
     </div>
 
